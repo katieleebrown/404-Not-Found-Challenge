@@ -1,0 +1,271 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+/* HTML and Body */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    font-family: "Space Mono", sans-serif;
+    background-color: white;
+    color: #333;
+}
+
+/* Header */
+header {
+    margin: 2vw 3vw;
+	margin-bottom: 5%;
+}
+
+.title {
+    display: block;
+    font-family: "Inconsolata", monospace;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: -0.08em;
+    text-transform: uppercase;    
+}
+
+/* Body */
+
+.container {
+    display: flex;
+    flex: 1 1 auto;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: stretch;
+    padding: 2%;
+    width: 100%;
+}
+
+.image {
+    display: flex;
+    flex: 1 1 auto;
+    object-fit: contain;
+    margin-right: 2%;
+    max-width: 50%;
+    min-width: 275px;
+}
+
+.text {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    margin: 2%;
+    max-width: 50%;
+}
+
+.image img {
+    flex: 1;
+    max-width: 100%;
+    padding: 3%;
+    object-fit: contain;
+    /* border: #4f4f4f solid 1px; */
+}
+
+.text h1 {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3.8vw;
+    line-height: 5.3vw;
+    letter-spacing: -0.035em;
+    max-width: 590px;
+}
+
+.text p {
+    color: #4f4f4f;
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.3vw;
+    line-height: 1.9vw;
+    letter-spacing: -0.035em;
+    margin: 10% 0;
+    max-width: 380px;
+}
+
+/* Button */
+
+button {
+    align-self: baseline;
+    background-color: #333;
+    border: #4f4f4f solid 1px;
+    color: #fff;
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: .65vw;
+    line-height: 1vw;
+    margin-top: 2%;
+    text-transform: uppercase;
+    padding: 2% 3%;
+}
+    
+button:hover {
+    cursor: pointer;
+}
+
+/* Footer */
+
+.footer  {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer p {
+    color: #a9a9a9;
+    font-family: "Montserrat", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: .85vw;
+    line-height: 17px;
+    margin: 4% 0 1% 0;
+}
+
+.footer a   {
+    text-decoration: none;
+    color: #888888;
+    font-weight: 600;
+}
+
+/* Mobile */
+
+/* Media Max 650px */
+@media screen and (max-width: 650px) {
+    header {
+        margin-bottom: 10%;
+    }
+    
+    .title {
+        font-size: 14px;
+        line-height: 25px;
+        letter-spacing: -0.08em;
+    }
+    
+    .container {
+        display: block;
+        padding: 1em;
+    }
+
+    .image {
+        max-width: 100%;
+        width: 90%;
+        justify-content: center;
+        align-content: center;
+        margin: 0;
+        margin-right: 0;
+        max-width: 575px;
+        object-fit: fill;
+    }
+
+    .image img {
+        margin: 0;
+        padding: 0;
+    }
+
+    .text {
+        max-width: 100%;
+        width: 100%;
+        justify-content: center;
+        align-content: center;
+        margin: 1%;
+    }
+
+    .text h1 {
+        font-size: 48px;
+        line-height: 71px;
+        letter-spacing: -0.035em;
+        max-width: 475px;
+    }
+
+    .text p {
+        font-size: 18px;
+        line-height: 36px;
+        letter-spacing: -0.035em;
+    }
+
+    button {
+        font-size: 14px;
+        line-height: 21px;
+        letter-spacing: -0.035em;
+    }
+
+    .footer p{
+        font-size: 14px;
+        line-height: 17px;
+        padding-top: 10%;
+    }
+}
+
+/* Mobile Max 400px */
+@media screen and (max-width: 400px) {
+    header {
+        margin-bottom: 10%;
+    }
+    
+    .title {
+        font-size: 14px;
+        line-height: 25px;
+        letter-spacing: -0.08em;
+    }
+    
+    .container {
+        display: block;
+        padding: 1em;
+    }
+
+    .image {
+        max-width: 100%;
+        width: 90%;
+        justify-content: center;
+        align-content: center;
+        margin: 0;
+        object-fit: fill;
+    }
+
+    .image img {
+        margin: 0;
+        padding: 0;
+    }
+
+    .text {
+        max-width: 100%;
+        width: 100%;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .text h1 {
+        font-size: 48px;
+        line-height: 71px;
+        letter-spacing: -0.035em;
+        max-width: 350px;
+    }
+
+    .text p {
+        font-size: 18px;
+        line-height: 36px;
+        letter-spacing: -0.035em;
+        max-width: 328px;
+    }
+
+    button {
+        font-size: 14px;
+        line-height: 21px;
+        letter-spacing: -0.035em;
+    }
+
+    .footer p{
+        font-size: 14px;
+        line-height: 17px;
+    }
+}
